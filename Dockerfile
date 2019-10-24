@@ -1,4 +1,3 @@
-# image tag    | public_dev/ubuntu18.04-cuda10.0-cudnn7:python3.6.5-tensorflow1.14-mxnet1.5-pytorch1.2-opencv3.4.4
 # usage        | dev
 # os           | ubuntu 18.04
 # nvidia       | cuda 10.0 + cudnn 7 + nccl 2.4.8
@@ -140,6 +139,12 @@ RUN apt install -y libcap-dev && pip install python-prctl
 
 # install libzmq
 RUN apt install -y libzmq3-dev
+
+# install unzip
+RUN apt-get install unzip
+
+# upgrade pip and step
+RUN pip install --upgrade pip
 
 # change default sh to bash - [0.0.2]
 RUN rm /bin/sh && ln -s /bin/bash /bin/sh
