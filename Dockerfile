@@ -8,7 +8,7 @@
 
 From nvidia/cuda:10.0-cudnn7-devel-ubuntu18.04
 
-MAINTAINER vivo-ai-basic/cv/liuzhiwen
+MAINTAINER liangly
 
 SHELL ["/bin/bash", "-cu"]
 RUN apt update ; apt install -y cmake make git wget sudo bzip2 lrzsz
